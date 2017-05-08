@@ -1,0 +1,302 @@
+@charset "UTF-8";
+/* reset.css */
+/* basic */
+html, body { width: 100%; height: 100%; }
+
+html, body, h1, h2, h3, h4, h5, h6, div, form, fieldset, table, tr, td, th, thead, tbody, tfoot, img, ul, ol, ul, li, dt, dd, dl, p { margin: 0; padding: 0; border: 0; outline: 0; color: #575757; font-size: 100%; line-height: 1.2; font-family: 'Nanum Gothic', 'myriad pro', arial, dotum, sans-serif; }
+
+/* set_1 */
+ul, ol, li { list-style: none; }
+
+a { text-decoration: none; color: inherit; }
+
+table, th, td { border-spacing: 0; border-collapse: collapse; }
+
+/* set_2: form */
+input, select, textarea { box-sizing: border-box; border: 1px solid #575757; }
+
+button, input[type="button"], input[type="submit"], input[type="reset"] { border: 0; cursor: pointer; }
+
+/* focus */
+a:focus, input:focus, button:focus, textarea:focus, select:focus { outline: 3px solid #ff0; outline-offset: 5px; position: relative; z-index: 1000; }
+
+/* html5 */
+header, article, aside, footer, nav, figure, main, srcset { display: block; }
+
+/* base.css */
+/* ir기법적용 */
+.hidden { width: 0; height: 0; display: block; overflow: hidden; }
+
+.hidden_wrap a > span { width: 0; height: 0; display: block; overflow: hidden; }
+
+.hidden_wrap a { width: 100%; height: 100%; display: block; background-repeat: no-repeat; background-position: 0 0; }
+
+/* clear:both 적용 */
+.clearfix:after, .cf:after { content: " "; display: block; clear: both; }
+
+/* table:sett */
+table { border: 2px solid #575757; border-left: 0; border-right: 0; }
+
+thead { background-color: #cfcfcf; }
+
+tbody td { border-top: 1px solid #575757; vertical-align: middle; text-indent: 3px; }
+
+tbody th { background-color: #cfcfcf; }
+
+/* nav last, first margin */
+.nav_fr li:first-child, .nav_la li:last-child { margin: 0; padding: 0; border: 0; }
+
+#wrap { width: 100%; height: 100%; }
+
+/*-- #headBox----------------------------------------------------*/
+#headBox { width: 100%; height: 100%; float: left; position: relative; }
+
+.video_box { width: 100%; height: 100%; overflow: hidden; position: absolute; z-index: -100; }
+
+#mainVideo { width: 100vw; }
+
+#headBox > nav { width: 100%; height: 5.5vw; background-color: rgba(23, 30, 52, 0.7); padding-top: 1%; padding-left: 1%; box-sizing: border-box; }
+
+.h1_logo { width: 60px; height: 52px; background-image: url(../image/h1_logox4.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; }
+
+.lang { width: auto; height: 2vw; background-color: none; line-height: 2vw; float: right; box-sizing: border-box; border-bottom: 2px solid #f33; }
+
+.lang > a { font-size: 12pt; float: left; padding: 0 10px; cursor: pointer; display: block; color: #fff; }
+
+.lang > a:last-of-type { margin-right: 0 1%; }
+
+.lang > a > .on { width: 0; height: inherit; float: right; display: block; overflow: hidden; transition: all 0.9s; }
+
+.lang > a:hover > .on { width: 7vw; }
+
+#headBox > .title_box { width: 100%; height: 90%; /*background-image: url(../image/jongmyo_achucguni.png); */ background-repeat: no-repeat; background-size: cover; background-position: center 30%; position: relative; }
+
+#headBox > .title_box > .meet_joseon_box { width: 32.5vw; height: 32.5vw; background-color: rgba(66, 66, 66, 0.5); position: absolute; top: calc(50% - 225px); left: 33%; }
+
+#headBox > .title_box > .meet_joseon_box > .meet_joseon { width: 26vw; height: 26vw; background-image: url(../image/jongmyo_mainx4.png); background-repeat: no-repeat; background-size: contain; position: absolute; top: 10%; left: 20%; }
+
+.indicator { width: 30px; height: 500px; padding-top: 30px; box-sizing: border-box; position: fixed; top: 200px; right: 15px; z-index: 500; }
+
+.roof_icon { width: 30px; height: 20px; background-image: url(../image/mini_pal.png); background-repeat: no-repeat; background-size: contain; position: fixed; /*background-color: #fff;*/ }
+
+.indi { width: 15px; height: 40px; background-color: #233052; margin-top: 20px; margin-left: 5px; box-sizing: border-box; border: 2px solid #fff; cursor: pointer; }
+
+/*-- #aboutJongmyo----------------------------------------------------*/
+#aboutJongmyo { width: 100%; height: 100%; background-color: #fff; float: left; }
+
+#aboutJongmyo > .p_box { width: 25vw; height: 10vw; margin-top: 22%; margin-left: 400px; float: left; /*background-color: #a9f;*/ }
+
+.p_box > .j_dynasty { font-size: 12pt; text-align: left; margin: 0; float: left; }
+
+.p_box > .arch { font-size: 16pt; text-align: right; font-weight: bold; margin: 0; float: left; }
+
+#aboutJongmyo > .object_jongmyo { width: 25vw; height: 35vw; background-image: url(../image/about_jongmyo.png); background-size: contain; background-repeat: no-repeat; margin-right: 15%; margin-top: 12%; float: left; }
+
+/*-- #historyBox----------------------------------------------------*/
+#historyBox { width: 100%; height: 100%; background-image: url(../image/jongmyo_history_back.jpg); background-repeat: no-repeat; background-size: 100%; background-position: center; float: left; box-sizing: border-box; position: relative; }
+
+.history { width: 340px; height: 480px; background-color: rgba(66, 66, 66, 0.8); float: left; padding-top: 60px; padding-left: 68px; box-sizing: border-box; position: absolute; left: 50%; top: 15%; margin-left: -340px; }
+.history .fplus_history { text-align: center; line-height: 30px; }
+.history .fplus_history:hover > i { font-size: 4em; }
+.history i { transition: all 2s ease; }
+
+.history:hover i { transform: rotate(360deg); }
+
+#historyBox > .ceremony_music { width: 340px; height: 480px; background-color: rgba(255, 255, 255, 0.8); margin-top: 300px; float: left; padding-top: 80px; padding-left: 68px; box-sizing: border-box; position: absolute; left: 50%; bottom: 15%; }
+
+.mini_pal { width: 40px; height: 20px; background-image: url(../image/mini_pal.png); background-repeat: no-repeat; background-size: contain; margin-left: 160px; }
+
+.border_tb { width: 200px; height: 180px; margin: 0; }
+
+.bgi_history > .border_tb { border-top: 2px solid #fff; border-bottom: 2px solid #fff; }
+
+.bgi_music > .border_tb { border-top: 2px solid #171e34; border-bottom: 2px solid #171e34; }
+
+.fplus_history { width: 30px; height: 30px; margin-left: 85px; margin-top: 80px; position: relative; }
+
+.fplus_music { width: 30px; height: 30px; margin-left: 85px; margin-top: 80px; position: relative; }
+
+.fa-plus { width: 30px; height: 30px; font-size: 30px; cursor: pointer; display: block; position: absolute; }
+
+.fa-white { color: #fff; }
+
+.bgi_history > div > p { text-align: center; font-size: 30pt; font-weight: bold; color: #fff; line-height: 60px; margin-top: 30px; }
+
+.bgi_music > div > p { text-align: center; font-size: 30pt; font-weight: bold; color: #171e34; line-height: 60px; margin-top: 30px; }
+
+/*-- #party----------------------------------------------------*/
+#party { width: 100%; height: 90%; background-color: #3bf; float: left; }
+
+.poster { width: 100%; height: 100%; background-image: url(../image/h2_back_x4.png); background-repeat: no-repeat; background-size: cover; background-position: center; background-color: #23d; float: left; position: relative; }
+
+.h2_logo { width: 350px; height: 350px; background-image: url(../image/h2_logo.png); background-repeat: no-repeat; background-size: 100%; position: absolute; left: 80px; top: 40px; }
+
+.mo_info { font-size: 12pt; color: #fff; position: absolute; z-index: 100; top: 410px; left: 80px; }
+
+.modal_btn { width: 10em; height: 3em; border: 2px solid #fff; border-radius: 2em; padding: 0.8em 1.5em; box-sizing: border-box; font-size: 12pt; color: #fff; text-align: left; word-spacing: 30px; position: absolute; bottom: 200px; left: 80px; overflow: hidden; }
+.modal_btn > a { width: 100%; height: 100%; display: block; }
+
+.modal_box { width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 1500; background-color: rgba(50, 50, 50, 0.7); padding-top: 35px; padding-left: 200px; box-sizing: border-box; display: none; }
+
+.modal_info { width: 80%; height: 90%; box-shadow: 0.3em 0.3em 0.3em rgba(10, 10, 10, 0.5); position: absolute; }
+
+.mini_poster { width: 50%; height: 100%; float: left; background-image: url(../image/lotus_lantern.jpg); background-repeat: no-repeat; background-size: cover; padding-top: 240px; padding-left: 170px; box-sizing: border-box; background-position: center right; }
+
+.h2_mini { width: 60%; height: 60%; background-image: url(../image/h2_logo.png); background-repeat: no-repeat; background-size: contain; }
+
+.information { width: 50%; height: 100%; float: left; background-image: url(../image/lotus_lantern.jpg); background-repeat: no-repeat; background-size: cover; }
+
+.info_text { width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.6); padding-top: 30px; padding-left: 40px; box-sizing: border-box; }
+
+.info_box { width: 100%; height: 100%; }
+
+.info_text > h2 { font-size: 18pt; text-align: center; margin-bottom: 20px; }
+
+.info_text > .party_more > dt { list-style: disc; font-weight: bold; }
+
+/*-- #galleryBox----------------------------------------------------*/
+#galleryBox { width: 100%; height: 60%; background-color: #fff; float: left; position: relative; box-sizing: border-box; padding: 150px 60px 0 60px; }
+
+.photo_box { width: 1000px; height: 400px; top: 40px; left: 210px; position: absolute; overflow: hidden; }
+
+.photo_wrap { width: 300%; height: 100%; margin-left: -100%; }
+
+.photo_wrap > ul { width: 1000px; height: 100%; padding: 50px 25px; box-sizing: border-box; float: left; }
+
+/*.photo01{background-color: #ab7;}
+.photo02{background-color: #8ba;}
+.photo03{background-color: #faa;}*/
+.photo_wrap > ul > li { width: 300px; height: 300px; float: left; border-radius: 50%; }
+
+.photo_wrap > ul > li:nth-of-type(2) { margin: 0 25px; }
+
+.photo_1 { background-image: url(../image/gallery/winter_jongmyo.jpg); background-repeat: no-repeat; background-size: cover; }
+
+.photo_2 { background-image: url(../image/gallery/jongmyo_ceremony.jpg); background-repeat: no-repeat; background-size: cover; }
+
+.photo_3 { background-image: url(../image/gallery/jongmyo_ceremony_2.jpg); background-repeat: no-repeat; background-size: cover; }
+
+.photo_4 { background-image: url(../image/gallery/jongmyo_ceremony_3.jpg); background-repeat: no-repeat; background-size: cover; }
+
+.photo_5 { background-image: url(../image/gallery/jongmyo_spirit_road.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; }
+
+.photo_6 { background-image: url(../image/gallery/jongmyo_spirit_room.jpg); background-repeat: no-repeat; background-position: center; }
+
+.photo_7 { background-image: url(../image/gallery/jongmyo_door2.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; }
+
+.photo_8 { background-image: url(../image/gallery/kingsBed.jpg); background-repeat: no-repeat; background-position: right center; }
+
+.photo_9 { background-image: url(../image/gallery/southDoor.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; }
+
+.gallery_lbtn { width: 60px; height: 180px; background-image: url(../image/lbtn.png); background-repeat: no-repeat; background-size: contain; float: left;  /*position: absolute;
+left: 28px; top: 160px; z-index: 100;*/ }
+
+.gallery_rbtn { width: 60px; height: 180px; background-image: url(../image/rbtn.png); background-repeat: no-repeat; background-size: contain; float: right;  /*position: absolute;
+right: 28px; top: 160px; z-index: 100;*/ }
+
+.btn { width: 50px; height: 100%; background-color: transparent; }
+
+.more_photo { width: 100px; height: 30px; border: solid 1px #5a595b; text-align: center; position: absolute; right: 60px; bottom: 30px; }
+
+.more_photo > a > p { margin-top: 5px; }
+
+/*-- #partition----------------------------------------------------*/
+#partition { width: 100%; height: 10%; background-color: #2d2d2d; float: left; }
+
+/*-- #timetable----------------------------------------------------*/
+#timetable { width: 100%; height: 100%; background-image: url(../image/main/door_2.jpg); background-repeat: no-repeat; background-size: cover; float: left; padding-top: 60px; box-sizing: border-box; position: relative; }
+
+.table_wrap { width: 650px; height: 580px; padding-left: 25px; padding-top: 50px; box-sizing: border-box; margin-left: 100px; background-color: rgba(255, 255, 255, 0.7); float: left; }
+
+.table_wrap > h3 { width: 150px; height: 30px; font-size: 18pt; text-align: center; border-bottom: 1px solid #575757; margin-left: 220px; box-sizing: border-box; padding-bottom: 5px; }
+
+.free_watch { height: 160px; margin-top: 50px; float: left; }
+
+.time_watch { margin-top: 30px; float: left; }
+
+.free_watch > h4 { width: 300px; font-size: 16pt; margin-left: 20px; margin-bottom: 10px; }
+
+.time_watch > h4 { width: 300px; font-size: 16pt; margin-left: 20px; margin-bottom: 10px; }
+
+.free_watch > h4 > span:after { margin-right: 3px; }
+
+.time_watch > h4 > span:after { margin-right: 3px; }
+
+.free_watch > div > div > p { height: 25px; color: #fff; }
+
+.spring { width: 200px; height: 40px; background-color: #171e34; float: left; text-align: center; }
+
+.summer { width: 200px; height: 40px; background-color: #171e34; float: left; text-align: center; border-left: 1px solid #fff; border-right: 1px solid #fff; }
+
+.winter { width: 200px; height: 40px; background-color: #171e34; float: left; text-align: center; }
+
+.spring > div { width: calc(200 / 3) px; height: 40px; padding-top: 10px; box-sizing: border-box; }
+
+.summer > div { width: calc(200 / 3) px; height: 40px; padding-top: 10px; box-sizing: border-box; }
+
+.winter > div { width: calc(200 / 3) px; height: 40px; padding-top: 10px; box-sizing: border-box; }
+
+.spring > div:nth-of-type(4) { border-right: 1px solid #fff; box-sizing: border-box; }
+
+.summer > div:nth-of-type(4) { border-right: 1px solid #fff; box-sizing: border-box; }
+
+.winter > div:nth-of-type(4) { border-right: 1px solid #fff; box-sizing: border-box; }
+
+.s_ticket { width: 100px; height: 25px; background-color: rgba(23, 30, 52, 0.5); text-align: center; float: left; box-sizing: border-box; border-right: 1px solid #fff; }
+
+.s_time { width: 100px; height: 25px; background-color: rgba(23, 30, 52, 0.5); text-align: center; float: left; }
+
+.time { width: 100px; height: 25px; background-color: #171e34; float: left; }
+
+.info_lang { width: 150px; height: 200px; font-size: 12pt; float: left; text-align: center; }
+
+.info_lang > div { height: 50px; padding-top: 15px; box-sizing: border-box; }
+
+.info_lang > div:nth-of-type(2n) { background-color: #171e34; }
+
+.info_lang > div:nth-of-type(2n-1) { background-color: rgba(23, 30, 52, 0.5); }
+
+.info_lang > div > p { height: 25px; color: #fff; }
+
+.lang_k { padding-top: 8px; box-sizing: border-box; }
+
+.lang_e { padding-top: 8px; box-sizing: border-box; }
+
+.lang_j { padding-top: 8px; box-sizing: border-box; }
+
+.lang_c { padding-top: 8px; box-sizing: border-box; }
+
+.info_time { width: 450px; height: 200px; word-spacing: 5px; float: left; margin-left: 2px; }
+
+.info_time > div { height: 50px; padding-left: 7px; box-sizing: border-box; }
+
+.info_time > div:nth-of-type(2n) { background-color: #171e34; padding-top: 15px; }
+
+.info_time > div:nth-of-type(2n-1) { background-color: rgba(23, 30, 52, 0.5); padding-top: 6px; }
+
+.info_time > div > p { height: 25px; color: #fff; }
+
+.table_btn { width: 200px; height: 100px; margin-top: 504px; float: right; }
+
+.table_btn > li { width: 153px; height: 48px; border: 3px solid #fff; color: #fff; box-sizing: border-box; padding-top: 10px; padding-left: 14px; }
+
+.table_btn > li:last-child { margin-top: 12px; }
+
+.ticket_btn { word-spacing: 10px; font-size: 13pt; }
+
+.map_btn { font-size: 13pt; }
+
+.map_btn > span > i { margin-left: 38px; }
+
+.tt_modal { width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 1500; background-color: rgba(50, 50, 50, 0.7); display: none; }
+
+.tt_modal > div { width: 70%; height: 80%; background-color: #fff; box-sizing: border-box; box-shadow: 0.3em 0.3em 0.3em rgba(10, 10, 10, 0.5); position: absolute; top: 10%; left: 15%; z-index: 100; display: none; }
+
+/*-- #footBox----------------------------------------------------*/
+#footBox { width: 100%; height: 12%; background-color: rgba(255, 255, 255, 0.6); padding-top: 1.5%; padding-left: 1%; box-sizing: border-box; position: absolute; bottom: 0; }
+
+.cultureW { width: 10vw; height: 5vw; /*background-color: #caa;*/ background-image: url("../image/h2_cultural_day.png"); background-repeat: no-repeat; background-size: contain; float: left; margin-left: 2%; margin-top: 0.3%; }
+
+.heritage { width: 10vw; height: 5vw; /*background-color: #aaf;*/ background-image: url("../image/cultural_heritage_admin.png"); background-repeat: no-repeat; background-size: cover; background-position: 0 -6px; float: left; margin-left: 2%; }
+
+/*# sourceMappingURL=jongmyo_main.css.map */
