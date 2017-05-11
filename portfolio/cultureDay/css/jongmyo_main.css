@@ -71,15 +71,19 @@ tbody th { background-color: #cfcfcf; }
 
 #headBox > .title_box { width: 100%; height: 90%; /*background-image: url(../image/jongmyo_achucguni.png); */ background-repeat: no-repeat; background-size: cover; background-position: center 30%; position: relative; }
 
-#headBox > .title_box > .meet_joseon_box { width: 32.5vw; height: 32.5vw; background-color: rgba(66, 66, 66, 0.5); position: absolute; top: calc(50% - 225px); left: 33%; }
+#headBox > .title_box > .meet_joseon_box { width: 32.5vw; height: 32.5vw; background-color: rgba(66, 66, 66, 0.6); position: absolute; top: calc(50% - 225px); left: 33%; }
 
-#headBox > .title_box > .meet_joseon_box > .meet_joseon { width: 26vw; height: 26vw; background-image: url(../image/jongmyo_mainx4.png); background-repeat: no-repeat; background-size: contain; position: absolute; top: 10%; left: 20%; }
+#headBox > .title_box > .meet_joseon_box > .meet_joseon { width: 26vw; height: 26vw; background-image: url(../image/jongmyo_mainx4.png); background-repeat: no-repeat; background-size: contain; position: absolute; top: 10%; left: 22%; }
 
-.indicator { width: 30px; height: 500px; padding-top: 30px; box-sizing: border-box; position: fixed; top: 200px; right: 15px; z-index: 500; }
+.indi_box { width: 30px; height: 800px; position: fixed; top: 250px; right: 15px; z-index: 500; }
 
-.roof_icon { width: 30px; height: 20px; background-image: url(../image/mini_pal.png); background-repeat: no-repeat; background-size: contain; position: fixed; /*background-color: #fff;*/ }
+.indicator { width: 30px; height: 700px; padding-top: 5px; padding-left: 3px; box-sizing: border-box; }
+
+.roof_icon { width: 30px; height: 20px; background-image: url(../image/mini_roofx4.png); background-repeat: no-repeat; background-size: contain; margin-right: 5px; /*background-color: #fff;*/ }
 
 .indi { width: 15px; height: 40px; background-color: #233052; margin-top: 20px; margin-left: 5px; box-sizing: border-box; border: 2px solid #fff; cursor: pointer; }
+
+.indicator > li:first-child { margin-top: 0; }
 
 /*-- #aboutJongmyo----------------------------------------------------*/
 #aboutJongmyo { width: 100%; height: 100%; background-color: #fff; float: left; }
@@ -97,12 +101,15 @@ tbody th { background-color: #cfcfcf; }
 
 .history { width: 340px; height: 480px; background-color: rgba(66, 66, 66, 0.8); float: left; padding-top: 60px; padding-left: 68px; box-sizing: border-box; position: absolute; left: 50%; top: 15%; margin-left: -340px; }
 .history .fplus_history { text-align: center; line-height: 30px; }
-.history .fplus_history:hover > i { font-size: 4em; }
 .history i { transition: all 2s ease; }
 
 .history:hover i { transform: rotate(360deg); }
 
-#historyBox > .ceremony_music { width: 340px; height: 480px; background-color: rgba(255, 255, 255, 0.8); margin-top: 300px; float: left; padding-top: 80px; padding-left: 68px; box-sizing: border-box; position: absolute; left: 50%; bottom: 15%; }
+.ceremony_music { width: 340px; height: 480px; background-color: rgba(255, 255, 255, 0.8); margin-top: 300px; float: left; padding-top: 80px; padding-left: 68px; box-sizing: border-box; position: absolute; left: 50%; bottom: 15%; }
+.ceremony_music .fplus_music { text-align: center; line-height: 30px; }
+.ceremony_music i { transition: all 2s ease; }
+
+.ceremony_music:hover i { transform: rotate(360deg); }
 
 .mini_pal { width: 40px; height: 20px; background-image: url(../image/mini_pal.png); background-repeat: no-repeat; background-size: contain; margin-left: 160px; }
 
