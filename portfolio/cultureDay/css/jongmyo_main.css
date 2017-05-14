@@ -75,7 +75,7 @@ tbody th { background-color: #cfcfcf; }
 
 #headBox > .title_box > .meet_joseon_box > .meet_joseon { width: 26vw; height: 26vw; background-image: url(../image/jongmyo_mainx4.png); background-repeat: no-repeat; background-size: contain; position: absolute; top: 10%; left: 22%; }
 
-.indi_box { width: 30px; height: 800px; position: fixed; top: 250px; right: 15px; z-index: 500; }
+.indi_box { width: 30px; height: 800px; position: fixed; top: 240px; right: 15px; z-index: 500; }
 
 .indicator { width: 30px; height: 700px; padding-top: 5px; padding-left: 3px; box-sizing: border-box; }
 
@@ -153,19 +153,23 @@ tbody th { background-color: #cfcfcf; }
 
 .information { width: 50%; height: 100%; float: left; background-image: url(../image/lotus_lantern.jpg); background-repeat: no-repeat; background-size: cover; }
 
-.info_text { width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.6); padding-top: 30px; padding-left: 40px; box-sizing: border-box; }
+.info_text { width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.6); padding-top: 15%; box-sizing: border-box; }
 
 .info_box { width: 100%; height: 100%; }
 
-.info_text > h2 { font-size: 18pt; text-align: center; margin-bottom: 20px; }
+.info_text > h2 { font-size: 18pt; text-align: center; }
 
-.party_more { margin-top: 10%; line-height: 20px; }
+.party_more { margin-top: 5%; line-height: 20px; }
 
-.party_more > dl > dt { margin-top: 15px; }
+.party_more > p { font-size: 12pt; text-align: center; box-sizing: border-box; padding-top: 5%; }
+
+.party_more > dl { margin-left: 10%; }
+
+.party_more > dl > dt { font-weight: bold; margin-top: 15px; }
 
 .party_more > dl > dd { padding: 0; }
 
-.s_text { font-size: 12pt; }
+.s_text { font-size: 11pt; }
 
 .t_margin { margin: 15px 0 0 0; }
 
@@ -291,7 +295,7 @@ right: 28px; top: 160px; z-index: 100;*/ }
 
 .info_time > div > p { height: 25px; color: #fff; }
 
-.table_btn { width: 200px; height: 100px; margin-top: 504px; float: right; }
+.table_btn { width: 200px; height: 100px; margin-top: 490px; float: right; }
 
 .table_btn > li { width: 153px; height: 48px; border: 3px solid #fff; color: #fff; box-sizing: border-box; padding-top: 10px; padding-left: 14px; }
 
@@ -306,6 +310,34 @@ right: 28px; top: 160px; z-index: 100;*/ }
 .tt_modal { width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 1500; background-color: rgba(50, 50, 50, 0.7); display: none; }
 
 .tt_modal > div { width: 70%; height: 80%; background-color: #fff; box-sizing: border-box; box-shadow: 0.3em 0.3em 0.3em rgba(10, 10, 10, 0.5); position: absolute; top: 10%; left: 15%; z-index: 100; display: none; }
+
+.map_info { background-image: url(../image/K_sedan_chair.png); background-repeat: no-repeat; background-size: 100% 100%; }
+
+.tab { width: 90%; height: 70%; /*background-color: #b6f;*/ position: absolute; top: 10%; right: 5%; z-index: 200; }
+
+.tab > ul { width: 100%; height: 15%; /*background-color: #bb9;*/ }
+
+.tab > ul > li { width: 25%; height: 100%; float: left; text-align: center; /*background-color: #ccc;*/ line-height: 30px; }
+
+.tab > ul > li > a { width: 100%; height: 100%; display: block; }
+
+.tab_box { width: 100%; height: 100%; /*background-color: #fcb;*/ overflow: hidden; }
+
+.tab_box > div { width: 100%; height: 100%; box-sizing: border-box; padding: 1em; }
+
+/*.tab_box>div:nth-of-type(1){background-color:#05f;}
+.tab_box>div:nth-of-type(2){background-color:#09a;}
+.tab_box>div:nth-of-type(3){background-color:#0a5;}
+.tab_box>div:nth-of-type(4){background-color:#0f1;}*/
+.map_img { width: 100%; height: 100%; background-image: url(../image/jongmyo_map.png); background-repeat: no-repeat; background-size: contain; background-position: center; }
+
+/*안보이게*/
+.tab_box > div { display: none; }
+
+/*기능할당*/
+.tab > ul > li.active { box-sizing: border-box; border-bottom: 5px solid #000; }
+
+.tab_box > div.active_box { display: block; background-color: rgba(255, 255, 255, 0.7); box-sizing: border-box; padding-top: 3%; }
 
 /*-- #footBox----------------------------------------------------*/
 #footBox { width: 100%; height: 12%; background-color: rgba(255, 255, 255, 0.6); padding-top: 1.5%; padding-left: 1%; box-sizing: border-box; position: absolute; bottom: 0; }
