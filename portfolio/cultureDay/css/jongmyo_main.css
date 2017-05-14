@@ -3,7 +3,7 @@
 /* basic */
 html, body { width: 100%; height: 100%; }
 
-html, body, h1, h2, h3, h4, h5, h6, div, form, fieldset, table, tr, td, th, thead, tbody, tfoot, img, ul, ol, ul, li, dt, dd, dl, p { margin: 0; padding: 0; border: 0; outline: 0; color: #575757; font-size: 100%; line-height: 1.2; font-family: 'Nanum Gothic', 'myriad pro', arial, dotum, sans-serif; }
+html, body, h1, h2, h3, h4, h5, h6, div, form, fieldset, table, tr, td, th, thead, tbody, tfoot, img, ul, ol, ul, li, dt, dd, dl, p { margin: 0; padding: 0; border: 0; outline: 0; color: #000; font-size: 100%; line-height: 1.2; font-family: 'Nanum Gothic', 'myriad pro', arial, dotum, sans-serif; }
 
 /* set_1 */
 ul, ol, li { list-style: none; }
@@ -79,7 +79,7 @@ tbody th { background-color: #cfcfcf; }
 
 .indicator { width: 30px; height: 700px; padding-top: 5px; padding-left: 3px; box-sizing: border-box; }
 
-.roof_icon { width: 30px; height: 20px; background-image: url(../image/mini_roofx4.png); background-repeat: no-repeat; background-size: contain; margin-right: 5px; /*background-color: #fff;*/ }
+.roof_icon { width: 30px; height: 20px; background-image: url(../image/roof_indi@4x.png); background-repeat: no-repeat; background-size: contain; margin-right: 5px; /*background-color: #fff;*/ }
 
 .indi { width: 15px; height: 40px; background-color: #233052; margin-top: 20px; margin-left: 5px; box-sizing: border-box; border: 2px solid #fff; cursor: pointer; }
 
@@ -143,11 +143,11 @@ tbody th { background-color: #cfcfcf; }
 .modal_btn { width: 10em; height: 3em; border: 2px solid #fff; border-radius: 2em; padding: 0.8em 1.5em; box-sizing: border-box; font-size: 12pt; color: #fff; text-align: left; word-spacing: 30px; position: absolute; bottom: 200px; left: 80px; overflow: hidden; }
 .modal_btn > a { width: 100%; height: 100%; display: block; }
 
-.modal_box { width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 1500; background-color: rgba(50, 50, 50, 0.7); padding-top: 35px; padding-left: 200px; box-sizing: border-box; display: none; }
+.modal_box { width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 1500; background-color: rgba(50, 50, 50, 0.7); padding-top: 80px; padding-left: 200px; box-sizing: border-box; display: none; }
 
 .modal_info { width: 80%; height: 90%; box-shadow: 0.3em 0.3em 0.3em rgba(10, 10, 10, 0.5); position: absolute; }
 
-.mini_poster { width: 50%; height: 100%; float: left; background-image: url(../image/lotus_lantern.jpg); background-repeat: no-repeat; background-size: cover; padding-top: 240px; padding-left: 170px; box-sizing: border-box; background-position: center right; }
+.mini_poster { width: 50%; height: 100%; float: left; background-image: url(../image/lotus_lantern.jpg); background-repeat: no-repeat; background-size: cover; padding-top: 220px; padding-left: 140px; box-sizing: border-box; background-position: center right; }
 
 .h2_mini { width: 60%; height: 60%; background-image: url(../image/h2_logo.png); background-repeat: no-repeat; background-size: contain; }
 
@@ -159,7 +159,15 @@ tbody th { background-color: #cfcfcf; }
 
 .info_text > h2 { font-size: 18pt; text-align: center; margin-bottom: 20px; }
 
-.info_text > .party_more > dt { list-style: disc; font-weight: bold; }
+.party_more { margin-top: 10%; line-height: 20px; }
+
+.party_more > dl > dt { margin-top: 15px; }
+
+.party_more > dl > dd { padding: 0; }
+
+.s_text { font-size: 12pt; }
+
+.t_margin { margin: 15px 0 0 0; }
 
 /*-- #galleryBox----------------------------------------------------*/
 #galleryBox { width: 100%; height: 60%; background-color: #fff; float: left; position: relative; box-sizing: border-box; padding: 150px 60px 0 60px; }
