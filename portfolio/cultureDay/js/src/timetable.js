@@ -16,16 +16,17 @@
     tmbox.fadeIn();
     tmbox.find('div').eq(btnLi).fadeIn();
     
-    tmbox.children('div').prepend('<button type="button" class="tmClose"><i class="fa fa-times" aria-hidden="true"></i></button>');
+    tmbox.children('div').prepend('<button type="button" class="tmClose" tab-index="-1"><i class="fa fa-times" aria-hidden="true"></i></button>');
     
-    $('.tmClose').css({width:'3.5em', height:'3.5em', position:'absolute', top: '0.2em', right:'0.2em', zIndex:500, color:'#aaa', fontWeight:'bold'});
+    $('.tmClose').css({width:'3.5em', height:'3.5em', position:'absolute', top: '0.2em', right:'0.2em', zIndex:500, color:'#aaa', fontWeight:'bold', backgroundColor:'transparent'});
     $('.tmClose').parent().css({position:'relative'});  
    
    var tmClose = $('.tmClose'); 
     tmClose.on('click', function(e){
       e.preventDefault();
-     tmbox.find('div').find('.tmClose').remove();
-      tmbox.find('div').hide();
+      
+     tmbox.find('.tmClose').remove();
+      tmbox.find('.tt_modal').hide();
       tmbox.hide();
     });
   });

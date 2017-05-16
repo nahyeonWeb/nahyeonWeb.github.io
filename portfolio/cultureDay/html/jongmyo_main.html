@@ -15,6 +15,7 @@
   
   <div id="wrap">
     <header id="headBox" class="indi_wrap">
+      <h2 class="hidden">headBox</h2>
        <div class="video_box">
          <video id="mainVideo" autoplay muted>
          <source src="../video/korea_jongmyo.mp4" type="video/mp4">
@@ -26,11 +27,11 @@
           </h1></a>
         <div class="lang">
           <a class="eng">E<span class="on">nglish</span></a>
-<!--          <div class="eng_on"></div>-->
+<!--          <div class="eng_on"></div> -->
           <a class="ch">C<span class="on">hinese</span></a>
-<!--          <div class="ch_on"></div>-->
+<!--          <div class="ch_on"></div> -->
           <a class="ja">J<span class="on">apanese</span></a>
-<!--          <div class="ja_on"></div>-->
+<!--          <div class="ja_on"></div> -->
         </div>
       </nav>
       <div class="title_box">
@@ -51,8 +52,9 @@
         </div>
       </div>
     </header>
-    <!--#headBox---------------------------------------------------------->
+    <!-- #headBox ______________________________________________________ -->
     <article id="aboutJongmyo" class="indi_wrap">
+    <h2 class="hidden">aboutJongmyo</h2>
     <div class="p_box">
       <p class="j_dynasty">조선왕조 역대 왕과 왕후 및<br>
       추존된 왕과 왕후의 신주를 모신 유교사당으로</p>
@@ -61,10 +63,11 @@
     </div>
     <div class="object_jongmyo"></div>
     </article>
-    <!--#aboutJongmyo---------------------------------------------------------->
+    <!-- #aboutJongmyo __________________________________________________ -->
     <article id="party" class="indi_wrap">
+        <h2 class="hidden">party</h2>
          <div class="poster">
-           <h2 class="h2_logo"></h2>
+           <h2 class="h2_logo"><span class="hidden">한밤의 모꼬지 로고</span></h2>
            <p class="mo_info">모꼬지 : 놀이나 잔치 또는 그 밖의 일로 여러사람이 모이는 일</p>
            <div class="modal_btn">             
                <a href="#">상세보기
@@ -113,37 +116,49 @@
          </div>
       </div>
     </article>
-    <!--#party---------------------------------------------------------->
+    <!-- #party ___________________________________________________________ -->
     <div id="partition"></div>
-    <!--#partition------------------------------------------------------------>
+    <!-- #partition _______________________________________________________ -->
     <article id="historyBox" class="indi_wrap">
-      <div class="history">
-        <div class="mini_pal"></div>
-        <div class="bgi_history">
-          <div class="border_tb"><p>종묘의<br>
-            역사</p></div>
-        </div>
-  
-       <div class="fplus_history">
-         <i class="fa fa-plus fa-white" aria-hidden="true"></i>
-       </div>
- 
-      </div>
-     <div class="ceremony_music">
-       <div class="bgi_music">
-         <div class="border_tb"><p>종묘<br>
-           제례악</p></div>
-        
-          <div class="fplus_music">
-            <i class="fa fa-plus fa-black" aria-hidden="true"></i>
+     <h2 class="hidden">historyBox</h2>
+      <div class="btn_box">
+        <div class="history">
+            <div class="mini_pal"></div>
+            <div class="bgi_history">
+              <div class="border_tb"><p>종묘의<br>
+                역사</p></div>
+            </div>
+            
+           <div class="fplus_history">
+             <i class="fa fa-plus fa-white" aria-hidden="true"></i>
+           </div>
           </div>
-       
+          
+             <div class="ceremony_music">
+           <div class="bgi_music">
+             <div class="border_tb"><p>종묘<br>
+               제례악</p></div>
+            
+              <div class="fplus_music">
+                <i class="fa fa-plus fa-black" aria-hidden="true"></i>
+              </div>
+           
+           </div>
+         </div>
+      </div>
+     
+     <div class="modal_back">
+       <div class="h_modal">
+         종묘의 역사
+       </div>
+       <div class="m_modal">
+         종묘제례악
        </div>
      </div>
     </article>
-    <!--#historyBox---------------------------------------------------------->
+    <!-- #historyBox ____________________________________________________ -->
     <article id="galleryBox" class="indi_wrap">
-      
+      <h2 class="hidden">galleryBox</h2>
         <div class="gallery_lbtn">
         <button class="btn lbtn"><span class="hidden">왼쪽 사진보기</span></button>
         </div>
@@ -171,12 +186,11 @@
        <div class="gallery_rbtn">
        <button class="btn rbtn"><span class="hidden">오른쪽 사진보기</span></button>
        </div>
-       <div class="more_photo"><a href="#"><p>더보기 +</p></a></div>
     </article>
-    <!--#galleryBox----------------------------------------------------------->
+    <!-- #galleryBox ______________________________________________________ -->
     
     <article id="timetable" class="indi_wrap">
-      
+      <h2 class="hidden">timetable</h2>
        
        <div class="table_wrap">
        <h3>관람시간안내</h3>
@@ -304,11 +318,12 @@
      </div>
     
     <footer id="footBox">
+       <h2 class="hidden">footBox</h2>
       <div class="cultureW"></div>
       <div class="heritage"></div>
     </footer>
     </article>
-    <!--#timetable & footer--------------------------------------------------->
+    <!-- #timetable & footer _____________________________________________ -->
     
 
   </div>
@@ -319,5 +334,6 @@
   <script src="../js/src/timetable.js">
   </script>
   <script src="../js/src/headBox.js"></script>
+  <script src="../js/src/historyBox.js"></script>
 </body>
 </html>
