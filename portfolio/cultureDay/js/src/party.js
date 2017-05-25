@@ -1,5 +1,5 @@
 /* party.js */
-/*
+
 (function($){
   var party = $('#party');
   var mdbtn = $('.modal_btn');
@@ -30,6 +30,6 @@
   });
   
 })(this.jQuery);
-*/
+
 //한번 버튼클릭하고 두번째 클릭할때 모달창의 내용이 뜨지않아서 배경div(mbox) 와 내용div(info)를 각각 클래스를 주고
 //닫기 버튼 제이쿼리 부분에 fadeIn hide 각각 따로 써줌

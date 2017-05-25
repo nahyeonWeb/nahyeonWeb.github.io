@@ -3,35 +3,32 @@
 (function($){
   
   var bbox = $('.btn_box');
+  var cli = bbox.children('li');
   var mbg = $('.modal_back');
-  var hbtn = $('.history');
-  var cmbtn = $('.ceremony_music');
-  var mback = $('.modal_back');
-  var h_m = $('.h_modal');
+
   
-  bbox.on('click', function(e){
-  
-    var bdex = $(this).children('div').index();
+    cli.on('click', function(e){
     
-    console.log(bdex) //오류! 둘다 인덱스가 1로뜸 ...
+    var bdex = $(this).index();
     
     mbg.fadeIn();
-    mbg.find('div').eq(bdex).fadeIn();
+    mbg.children('div').eq(bdex).fadeIn();
     
-    mbg.find('div').prepend('<button type="button" class="mClose">닫기</button>');
-    
-    $('.mClose').css({width:'3.5em', height:'3.5em', backgroundColor:'#245',
-                   position:'absolute', top:'0.2em', right:'0.2em', zIndex:500,
-                   color:'#fff', borderRadius:'100%', fontWeight:'bold'});
+    mbg.children('div').prepend('<button type="button" class="mClose"><i class="fa fa-times" aria-hidden="true"></i></button>');
     
     var mClose = $('.mClose');
+    
+    mClose.css({width:'3.5em', height:'3.5em', backgroundColor:'transparent',
+                   position:'absolute', top:'0.2em', right:'0.2em', zIndex:500,
+                   color:'#666', fontWeight:'bold'});
+    
+    
     mClose.on('click', function(e){
       e.preventDefault();
-      mbg.find('div').find('.mClose').remove();
       mbg.find('div').hide();
+      mbg.find('div').find(mClose).hide();
       mbg.hide();
     });
-    
   });
   
 })(this.jQuery);

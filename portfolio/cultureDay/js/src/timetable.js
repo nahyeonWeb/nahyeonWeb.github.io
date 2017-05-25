@@ -1,9 +1,9 @@
 /* timetable.js */
 
 (function($){
-  concole.log('test');
+  
   var tb = $('.table_btn');
-  var t_btn = tb.find('li');
+  var t_btn = tb.children('li');
   var tmbox = $('.tt_modal');
   
   
@@ -12,23 +12,26 @@
     e.preventDefault();
     
     var btnLi = $(this).index();
+   
     
     tmbox.fadeIn();
-    tmbox.find('div').eq(btnLi).fadeIn();
+    tmbox.children('div').eq(btnLi).fadeIn();
     
-    tmbox.find('div').prepend('<button type="button" class="tmClose"><i class="fa fa-times" aria-hidden="true"></i></button>');
+    tmbox.children('div').prepend('<button type="button" class="tmClose"><i class="fa fa-times" aria-hidden="true"></i></button>');
     
-    $('.tmClose').css({width:'3.5em', height:'3.5em', position:'absolute', top: '0.2em', right:'0.2em', zIndex:500, color:'#faa', fontWeight:'bold'});
-    $('.tmClose').parent().css({position:'relative'});  
-   console.log('lodingtest');
    var tmClose = $('.tmClose'); 
+    tmClose.css({width:'3.5em', height:'3.5em', position:'absolute', top: '0.2em', right:'0.2em', zIndex:500, color:'#faa', fontWeight:'bold', backgroundColor:'transparent'});
+    tmClose.parent().css({position:'relative'});  
+   
     tmClose.on('click', function(e){
       e.preventDefault();
-      var _$this = $(this);
-     tmbox.find('div').find('.tmClose').remove();
-      _$this.parent('div').hide();
+    
+     //tmbox.find('div').find(tmClose)
+      $(this).parent('div').hide();
+      $(this).remove();
+//      tmbox.find('div').eq(btnLi).hide();
+      tmbox.hide();
 //      tb.hide();
     });
   });
-  
-})(this.jQuery);
+  })(this.jQuery);
