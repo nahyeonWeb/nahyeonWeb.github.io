@@ -3,7 +3,7 @@
 /* basic */
 html, body { width: 100%; height: 100%; }
 
-html, body, h1, h2, h3, h4, h5, h6, div, form, fieldset, table, tr, td, th, thead, tbody, tfoot, img, ul, ol, ul, li, dt, dd, dl, p { margin: 0; padding: 0; border: 0; outline: 0; color: #000; font-size: 100%; line-height: 1.2; font-family: 'Nanum Gothic', 'myriad pro', arial, dotum, sans-serif; }
+html, body, h1, h2, h3, h4, h5, h6, div, form, fieldset, table, tr, td, th, thead, tbody, tfoot, img, ul, ol, ul, li, dt, dd, dl, p { margin: 0; padding: 0; border: 0; outline: 0; color: #000; font-size: 100%; line-height: 1.2; font-family: 'Nanum Gothic', 'myriad pro', Arial, dotum, sans-serif; }
 
 /* set_1 */
 ul, ol, li { list-style: none; }
@@ -55,9 +55,9 @@ tbody th { background-color: #cfcfcf; }
 
 #mainVideo { width: 100vw; }
 
-#headBox > nav { width: 100%; height: 5.5vw; background-color: rgba(23, 30, 52, 0.7); padding-top: 1%; padding-left: 1%; box-sizing: border-box; }
+#headBox > nav { width: 100%; height: 5.5vw; background-color: rgba(23, 30, 52, 0.7); padding-top: 1%; padding-left: 1%; padding-bottom: 1%; box-sizing: border-box; }
 
-.h1_logo { width: 60px; height: 52px; background-image: url(../image/h1_logox4.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; }
+.h1_logo { width: 4.5vw; height: 3.9vw; background-image: url(../image/h1_logox4.png); background-repeat: no-repeat; background-size: contain; float: left; }
 
 .lang { width: auto; height: 2vw; background-color: none; line-height: 2vw; float: right; box-sizing: border-box; border-bottom: 2px solid #f33; }
 
@@ -71,19 +71,19 @@ tbody th { background-color: #cfcfcf; }
 
 #headBox > .title_box { width: 100%; height: 90%; /*background-image: url(../image/jongmyo_achucguni.png); */ background-repeat: no-repeat; background-size: cover; background-position: center 30%; position: relative; }
 
-#headBox > .title_box > .meet_joseon_box { width: 32.5vw; height: 32.5vw; background-color: rgba(66, 66, 66, 0.6); position: absolute; top: calc(50% - 225px); left: 33%; }
+#headBox > .title_box > .meet_joseon_box { width: 29vw; height: 29vw; background-color: rgba(66, 66, 66, 0.6); position: absolute; top: calc(50% - 225px); left: 35%; }
 
-#headBox > .title_box > .meet_joseon_box > .meet_joseon { width: 26vw; height: 26vw; background-image: url("../image/jongmyo_mainx4.png"); background-repeat: no-repeat; background-size: contain; position: absolute; top: 10%; left: 22%; }
+#headBox > .title_box > .meet_joseon_box > .meet_joseon { width: 20vw; height: 20vw; background-image: url("../image/jongmyo_mainx4.png"); background-repeat: no-repeat; background-size: contain; position: absolute; top: 16%; left: 25%; }
 
-.indi_box { width: 30px; height: 800px; position: fixed; top: 240px; right: 15px; z-index: 500; }
+.indi_box { width: 2.34375vw; height: 62.5vw; position: fixed; top: 240px; right: 15px; z-index: 500; }
 
-.indicator { width: 30px; height: 700px; padding-top: 5px; padding-left: 3px; box-sizing: border-box; }
+.indicator { width: 2.34375vw; height: 54.6875vw; padding-top: 5px; padding-left: 3px; box-sizing: border-box; }
 
-.roof_icon { width: 30px; height: 20px; background-image: url("../image/roof_indi@4x.png"); background-repeat: no-repeat; background-size: contain; margin-right: 5px; /*background-color: #fff;*/ }
-
-.indi { width: 15px; height: 40px; background-color: #233052; margin-top: 20px; margin-left: 5px; box-sizing: border-box; border: 2px solid #fff; cursor: pointer; }
+.indi { width: 0.567vw; height: 3.125vw; background-color: #233052; margin-top: 20px; margin-left: 5px; cursor: pointer; }
 
 .indicator > li:first-child { margin-top: 0; }
+
+.c_indi { background-color: #f33; }
 
 /*-- #aboutJongmyo----------------------------------------------------*/
 #aboutJongmyo { width: 100%; height: 100%; background-color: #fff; float: left; }

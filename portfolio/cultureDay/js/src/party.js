@@ -1,5 +1,5 @@
 /* party.js */
-
+/*
 (function($){
   var party = $('#party');
   var mdbtn = $('.modal_btn');
@@ -19,7 +19,7 @@
   mbox.find('.modal_info').prepend('<button type="button" class="mClose"><i class="fa fa-times" aria-hidden="true"></i></button>');
   $('.mClose').css({width:'3.5em', height:'3.5em',
                    position:'absolute', top:'0.2em', right:'0.2em', zIndex:500,
-                   color:'#fff', fontWeight:'bold', backgroundColor:'transparent'});
+                   color:'#fff', fontWeight:'bold'});
   $('.mClose').parent().css({position:'relative'});
   var mClose = $('.mClose');
   mClose.on('click', function(e){
@@ -30,6 +30,6 @@
   });
   
 })(this.jQuery);
-
+*/
 //한번 버튼클릭하고 두번째 클릭할때 모달창의 내용이 뜨지않아서 배경div(mbox) 와 내용div(info)를 각각 클래스를 주고
 //닫기 버튼 제이쿼리 부분에 fadeIn hide 각각 따로 써줌
