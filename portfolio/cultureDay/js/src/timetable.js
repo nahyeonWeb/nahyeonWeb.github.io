@@ -34,4 +34,29 @@
 //      tb.hide();
     });
   });
+  
+  
+  //탭메뉴
+  var tabLi = $('.tab').find('li');
+  
+  var tabInfo = $('.tab_box').children('div');
+  
+  tabLi.eq(0).addClass('active');
+  tabInfo.eq(0).addClass('active_box');
+  
+  tabLi.on('click', function(evt){
+    evt.preventDefault();
+    
+    var $this = $(this);
+  var thisIndex = $this.index();
+    
+    tabLi.removeClass('active');
+    $this.addClass('active');
+    
+    
+    tabInfo.removeClass('active_box');
+    tabInfo.eq(thisIndex).addClass('active_box');
+    
+    
+  });
   })(this.jQuery);
