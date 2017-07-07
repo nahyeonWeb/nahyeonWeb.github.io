@@ -20,7 +20,7 @@
     tmbox.children('div').prepend('<button type="button" class="tmClose"><i class="fa fa-times" aria-hidden="true"></i></button>');
     
    var tmClose = $('.tmClose'); 
-    tmClose.css({width:'3.5em', height:'3.5em', position:'absolute', top: '0.2em', right:'0.2em', zIndex:500, color:'#faa', fontWeight:'bold', backgroundColor:'transparent'});
+    tmClose.css({width:'3.5em', height:'3.5em', position:'absolute', top: '0.2em', right:'0.2em', zIndex:500, color:'#666', fontWeight:'bold', fontSize:'1.5em', backgroundColor:'transparent'});
     tmClose.parent().css({position:'relative'});  
    
     tmClose.on('click', function(e){

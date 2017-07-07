@@ -317,17 +317,17 @@ right: 28px; top: 160px; z-index: 100;*/ }
 
 .map_info { background-image: url("../image/K_sedan_chair.png"); background-repeat: no-repeat; background-size: 100% 100%; }
 
-.tab { width: 90%; height: 70%; /*background-color: #b6f;*/ position: absolute; top: 10%; right: 5%; z-index: 200; }
+.tab { width: 90%; height: 80%; /*background-color: #b6f;*/ position: absolute; top: 10%; right: 5%; z-index: 200; }
 
-.tab > ul { width: 100%; height: 15%; /*background-color: #bb9;*/ }
+.tab > ul { width: 12%; height: 50%; /*background-color: #bb9;*/ display: block; float: left; }
 
-.tab > ul > li { width: 25%; height: 100%; float: left; text-align: center; /*background-color: #ccc;*/ line-height: 30px; }
+.tab > ul > li { width: 100%; height: 20%; float: left; text-align: center; /*background-color: #ccc;*/ line-height: 30px; float: left; }
 
 .tab > ul > li > a { width: 100%; height: 100%; display: block; }
 
-.tab_box { width: 100%; height: 100%; /*background-color: #fcb;*/ overflow: hidden; }
+.tab_box { width: 80%; height: 70%; /*background-color: #fcb;*/ overflow: hidden; float: right; }
 
-.tab_box > div { width: 100%; height: 100%; box-sizing: border-box; padding: 1em; }
+.tab_box > div { width: 100%; height: 100%; }
 
 /*.tab_box>div:nth-of-type(1){background-color:#05f;}
 .tab_box>div:nth-of-type(2){background-color:#09a;}
@@ -335,11 +335,19 @@ right: 28px; top: 160px; z-index: 100;*/ }
 .tab_box>div:nth-of-type(4){background-color:#0f1;}*/
 .map_img { width: 100%; height: 100%; background-image: url("../image/jongmyo_map.png"); background-repeat: no-repeat; background-size: contain; background-position: center; }
 
+.map_icon { width: 40px; height: 40px; background-image: url("../image/map_icon.png"); background-repeat: no-repeat; background-size: contain; margin-left: 42%; }
+
+.bus_icon { width: 40px; height: 40px; background-image: url("../image/bus_icon.png"); background-repeat: no-repeat; background-size: contain; margin-left: 42%; }
+
+.subway_icon { width: 40px; height: 40px; background-image: url("../image/subway_icon.png"); background-repeat: no-repeat; background-size: contain; margin-left: 42%; }
+
+.car_icon { width: 40px; height: 40px; background-image: url("../image/car_icon.png"); background-repeat: no-repeat; background-size: contain; margin-left: 42%; }
+
 /*안보이게*/
 .tab_box > div { display: none; }
 
 /*기능할당*/
-.tab > ul > li.active { box-sizing: border-box; border-bottom: 5px solid #000; }
+.tab > ul > li.active { box-sizing: border-box; border-right: 5px solid #000; }
 
 .tab_box > div.active_box { display: block; background-color: rgba(255, 255, 255, 0.7); box-sizing: border-box; padding-top: 3%; }
 

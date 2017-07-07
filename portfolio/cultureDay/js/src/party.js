@@ -17,9 +17,9 @@
   
   // 닫기 버튼 생성
   mbox.find('.modal_info').prepend('<button type="button" class="mClose"><i class="fa fa-times" aria-hidden="true"></i></button>');
-  $('.mClose').css({width:'3.5em', height:'3.5em',
+  $('.mClose').css({width:'2em', height:'2em',
                    position:'absolute', top:'0.2em', right:'0.2em', zIndex:500,
-                   color:'#fff', fontWeight:'bold', backgroundColor:'transparent'});
+                   color:'#fff', fontWeight:'bold', fontSize:'1.5em', backgroundColor:'transparent'});
   $('.mClose').children('i').css({fontWeight:'bold'});
   $('.mClose').parent().css({position:'relative'});
   var mClose = $('.mClose');
