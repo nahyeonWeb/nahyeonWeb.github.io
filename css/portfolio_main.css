@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import "./bin/reset.css";
+@import "./bin/base.css";
+
+/*--_________________portfolio_main.css_____ --*/
+
+#wrap{width: 100%; height: 100%; background-color: #000;}
+
+#headBox{width: 100%; height: 30%; padding: 20px; box-sizing: border-box;}
+h1{width: 100%; height: 50%; color: #fff; font-size: 60pt; text-align: right;}
+#headBox>h2{width: 100%; height: 30%; color: #fff; font-size: 20pt; text-align: right;}
+
+/*-- //header_______________________________ --*/
+
+
+#cBox{width: 100%; height: 70%; padding: 100px 0 0 380px;
+  box-sizing: border-box;}
+
+.resume_b{width: 300px; height: 300px; background-color: #ffd700; float: left; margin-right: 100px; border-radius: 20px;}
+.resume_b>h2{width: 100%; height: 100%; font-size: 18pt; text-align: center;}
+.portfolio_b1{width: 300px; height: 300px; background-color: #ffd700; float: left; border-radius: 20px;}
+.portfolio_b1>h2{width: 100%; height: 100%; font-size: 18pt; text-align: center;}
+/*-- container_____________________________ --*/

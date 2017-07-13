@@ -55,9 +55,9 @@ tbody th { background-color: #cfcfcf; }
 
 #mainVideo { width: 100vw; }
 
-#headBox > nav { width: 100%; height: 5.5vw; background-color: rgba(23, 30, 52, 0.7); padding-top: 1%; padding-left: 1%; padding-bottom: 1%; box-sizing: border-box; }
+#headBox > nav { width: 100%; height: 5.5vw; background-color: rgba(23, 30, 52, 0.7); padding-top: 1%; padding-left: 1.5%; padding-bottom: 1%; box-sizing: border-box; }
 
-.h1_logo { width: 4.5vw; height: 3.9vw; background-image: url(../image/h1_logox4.png); background-repeat: no-repeat; background-size: contain; float: left; }
+.h1_logo { width: 4.2vw; height: 3.6vw; background-image: url(../image/h1_logox4.png); background-repeat: no-repeat; background-size: contain; float: left; }
 
 .lang { width: auto; height: 2vw; background-color: none; line-height: 2vw; float: right; box-sizing: border-box; border-bottom: 2px solid #f33; }
 
@@ -92,7 +92,7 @@ tbody th { background-color: #cfcfcf; }
 
 .p_box > .j_dynasty { font-size: 12pt; text-align: left; margin: 0; float: left; }
 
-.p_box > .arch { font-size: 16pt; text-align: right; font-weight: bold; margin: 0; float: left; }
+.p_box > .arch { font-size: 16pt; text-align: left; font-weight: bold; margin-top: 10px; float: left; }
 
 #aboutJongmyo > .object_jongmyo { width: 25vw; height: 35vw; background-image: url(../image/about_jongmyo.png); background-size: contain; background-repeat: no-repeat; margin-right: 15%; margin-top: 12%; float: left; }
 
